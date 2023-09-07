@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { List } from "./components/List";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="container">
+            <nav className="navbar sticky-top navbar-light bg-dark">
+                <h1 className="navbar-brand text-light">Rick and Morty</h1>
+            </nav>
+            <List />
+        </div>
+    );
 }
 
 export default App;
